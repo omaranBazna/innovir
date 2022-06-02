@@ -20,10 +20,11 @@ const [lang,setLang]=useState('En')
         <a href="#" ></a>
        </nav>
        <section  id="about">
+       
 
-      </section>
+       </section>
 
-      <section  id="products" >
+       <section  id="products" >
          
        </section>
 
@@ -31,8 +32,8 @@ const [lang,setLang]=useState('En')
          
        </section>
        
-        <footer>
-
+       <footer>
+       
         </footer>
 
     </div>
