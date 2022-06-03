@@ -27,6 +27,9 @@ const [lang,setLang]=useState('En')
 
        <section  id="products" >
          <Product />
+         <Product />
+         <Product />
+         <Product />
 
        </section>
 
