@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react'
+import Product from "./Components/Product"
 function App() { 
 const [lang,setLang]=useState('En')
   return (
@@ -25,7 +26,8 @@ const [lang,setLang]=useState('En')
        </section>
 
        <section  id="products" >
-         
+         <Product />
+
        </section>
 
        <section  id="contact us">
