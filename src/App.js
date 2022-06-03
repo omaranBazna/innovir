@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react'
 import Product from "./Components/Product"
+import ContactForm from './Components/ContactForm';
 import Logo from './graphics/logo.png'
 function App() { 
 const [lang,setLang]=useState('En')
@@ -37,7 +38,7 @@ const [lang,setLang]=useState('En')
        </section>
 
        <section  id="contact us">
-         
+         <ContactForm />
        </section>
        
        <footer>

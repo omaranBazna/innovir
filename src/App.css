@@ -1,5 +1,3 @@
-
-
 #products{
   display:flex;
 }
@@ -40,6 +38,12 @@ a:hover{
  font-family: 'MyFont';
   
 }
+@media(max-width:650px) {
+  
+}
+
+
+
 @font-face {
   font-family: 'MyFont';
   src: local('MyFont'),
