@@ -1,3 +1,5 @@
+
+
 #products{
   display:flex;
 }
@@ -34,5 +36,12 @@ a:hover{
  
 }
 .App{
-  font-family: 'Roboto Slab', serif;
+ font-family: 'MyFont';
+  
+}
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'),
+   url(./fonts/Sony_Sketch_EF.woff) format('woff');
+ 
 }
