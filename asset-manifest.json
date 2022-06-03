@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/innovir/static/css/main.103c1b1b.css",
+    "main.js": "/innovir/static/js/main.aba4d945.js",
+    "static/js/787.f568afdd.chunk.js": "/innovir/static/js/787.f568afdd.chunk.js",
+    "static/media/Sony_Sketch_EF.woff": "/innovir/static/media/Sony_Sketch_EF.8a15f54305683f279a32.woff",
+    "static/media/logo.png": "/innovir/static/media/logo.708924febfa1d780dc0f.png",
+    "static/media/logo.svg": "/innovir/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/innovir/index.html",
+    "main.103c1b1b.css.map": "/innovir/static/css/main.103c1b1b.css.map",
+    "main.aba4d945.js.map": "/innovir/static/js/main.aba4d945.js.map",
+    "787.f568afdd.chunk.js.map": "/innovir/static/js/787.f568afdd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.103c1b1b.css",
+    "static/js/main.aba4d945.js"
+  ]
+}
