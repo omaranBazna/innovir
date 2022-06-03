@@ -1,5 +1,5 @@
 import React from 'react'
-export default function contactForm(){
+export default function ContactForm(){
    
     return (
 
