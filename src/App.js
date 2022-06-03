@@ -16,9 +16,9 @@ const [lang,setLang]=useState('En')
         */}
        <nav>
         <img src="" className='logo' />
-        <a href="#" ></a>
-        <a href="#" ></a>
-        <a href="#" ></a>
+        <a href="#" >about</a>
+        <a href="#" >products</a>
+        <a href="#" >contact us</a>
        </nav>
        <section  id="about">
        
