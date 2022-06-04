@@ -1,4 +1,5 @@
 import {Container, Row, Col} from 'reactstrap'
+import Logo from '../graphics/logo.png'
 import './Footer.css'
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <Row className='row-cols-1 text-center fow-cols-sm-2 row-cols-md-5 py-5 my-5 d-flex justify-content-evenly boarder-top'>
             <Col className='mb-3 p-3'>
               <ul>
-                <img src='./logo.png' />
+                <img className="image" src={Logo}/>
                 <p className='text-muted'>@ 2022</p>        
               </ul>
             </Col>
