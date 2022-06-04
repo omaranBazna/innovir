@@ -4,6 +4,8 @@ import {useState} from 'react'
 import Product from "./Components/Product"
 import ContactForm from './Components/ContactForm';
 import Logo from './graphics/logo.png'
+import Footer from './Components/Footer'
+import Footer2 from './Components/Footer2'
 function App() { 
 const [lang,setLang]=useState('En')
   return (
@@ -42,6 +44,12 @@ const [lang,setLang]=useState('En')
        </section>
        
        <footer>
+       <h1 className='text-dark'>Footer 1</h1>
+         <Footer />
+       
+       
+         <h1 className='text-dark'>Footer 2</h1>
+         <Footer2 />
        
         </footer>
 
