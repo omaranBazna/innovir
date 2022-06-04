@@ -1,44 +1,52 @@
-.App {
-  text-align: center;
+#products{
+  display:flex;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product{
+  padding:10px;
+  margin:10px;
+  background-color: rgb(240, 240, 240);
+  border-radius:8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+  height:50px;
+  background-color:black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-options{
+  width:100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  justify-content: space-around;
+}
+nav img{
+  height:50px;
+  padding:20px;
+}
+a{
+  text-decoration:none;
+  color:rgb(211, 211, 211);
+  font-size:25px;
+
+}
+a:hover{
+  color:white;
+ 
+}
+.App{
+ font-family: 'MyFont';
+  
+}
+@media(max-width:650px) {
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.En{
-  color:red;
-}
-.Fr{
-  color:blue;
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'),
+   url(./fonts/Sony_Sketch_EF.woff) format('woff');
+ 
 }
