@@ -5,7 +5,7 @@ const Footer2 = () => {
     return (
         <div>
         <div className='Container'>
-            <Row className='d-flex justify-content-evenly  py-3 my-4 border-top text-muted'>
+            <Row className='d-flex justify-content-evenly  py-3 my-4 border text-muted'>
                 <Col className='text-muted text-center'>
                     <span><img src='./logo.png' />
                     <p>© 2022 Innovir Company, Inc. All rights reserved.</p>
