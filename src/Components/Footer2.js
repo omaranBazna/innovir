@@ -2,12 +2,13 @@ import {Container, Row, Col} from 'reactstrap'
 import { BsLinkedin, BsFacebook, BsTwitter } from "react-icons/bs";
 import './Footer.css'
 const Footer2 = () => {
+    const logoImg = new URL('./logo.png', import.meta.url);
     return (
         <div>
         <div className='Container'>
             <Row className='d-flex justify-content-evenly  py-3 my-4 border text-muted'>
                 <Col className='text-muted text-center'>
-                    <span><img src='./logo.png' />
+                    <span className='img-responsive'><img src={logoImg} height='24px'/>
                     <p>© 2022 Innovir Company, Inc. All rights reserved.</p>
                     </span>
                     </Col>
