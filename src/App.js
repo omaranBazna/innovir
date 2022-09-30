@@ -21,9 +21,9 @@ const [lang,setLang]=useState('En')
        <nav>
         <img src={Logo} className='logo' />
         <div className="nav-options">
-        <a href="#" >about</a>
-        <a href="#" >products</a>
-        <a href="#" >contact us</a>
+          <a href="#" >about</a>
+          <a href="#" >products</a>
+          <a href="#" >contact us</a>
         </div>
        </nav>
        
@@ -34,7 +34,7 @@ const [lang,setLang]=useState('En')
          <Product />
          <Product />
          <Product />
-         <Product />
+         <Product />  
 
        </section>
 

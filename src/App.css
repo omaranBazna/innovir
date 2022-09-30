@@ -1,22 +1,21 @@
-#products{
-  display:flex;
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'),
+   url(./fonts/Sony_Sketch_EF.woff) format('woff');
+ 
 }
-.product{
-  padding:10px;
-  margin:10px;
-  background-color: rgb(240, 240, 240);
-  border-radius:8px;
-}
+
 nav{
   display:flex;
   align-items:center;
   justify-content: flex-start;
   height:50px;
   background-color:black;
+  width: 100vw;
 }
 .nav-options{
-  width:100%;
-  display: flex;
+  width:100vw;
+  display: flex; 
   align-items:center;
   justify-content: space-around;
 }
@@ -38,15 +37,18 @@ a:hover{
  font-family: 'MyFont';
   
 }
-@media(max-width:650px) {
-  
+
+#products{
+  display:flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 3em;
 }
 
-
-
-@font-face {
-  font-family: 'MyFont';
-  src: local('MyFont'),
-   url(./fonts/Sony_Sketch_EF.woff) format('woff');
- 
+@media(max-width:900px) {
+  #products{
+    flex-direction: column;
+  }
 }
