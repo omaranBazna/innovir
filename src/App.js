@@ -26,9 +26,8 @@ const [lang,setLang]=useState('En')
         <a href="#" >contact us</a>
         </div>
        </nav>
-       <section  id="about">
        
-
+       <section  id="about">
        </section>
 
        <section  id="products" >

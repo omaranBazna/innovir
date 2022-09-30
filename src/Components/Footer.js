@@ -6,9 +6,9 @@ const Footer = () => {
       <div>
       <div className='Container '>
     
-        <Row className='row-cols-1 text-center fow-cols-sm-2 row-cols-md-5 py-5 my-5 d-flex justify-content-evenly boarder-top'>
+        <Row className='row-cols-1 text-center fow-cols-sm-2 row-cols-md-5 py-5 my-5 d-flex justify-content-center boarder-top'>
             <Col className='mb-3 p-3'>
-              <ul>
+              <ul className="container-image">  
                 <img className="image" src={Logo}/>
                 <p className='text-muted'>@ 2022</p>        
               </ul>
@@ -49,12 +49,7 @@ const Footer = () => {
               </a></li>
               </ul>
             </Col>
-            </Row>   
-        
-    
-           
-                    
-         
+            </Row>          
         </div>
         <div className="Block d-flex justify-content-center align-items-center">
 
