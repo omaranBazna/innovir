@@ -1,31 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import {useState} from 'react'
-import Product from "./Components/Product"
+
+import Product from "./Components/Product";
 import ContactForm from './Components/ContactForm';
-import Logo from './graphics/logo.png'
-import Footer from './Components/Footer'
-import Footer2 from './Components/Footer2'
+import Logo from './graphics/logo.png';
+import Footer from './Components/Footer';
+import Footer2 from './Components/Footer2'; 
+
+import "./i18n/index";
+import { LanguageSwitcher } from './Components/LanguageSwitcher';
+import { useTranslation }  from 'react-i18next'
+
 function App() { 
-const [lang,setLang]=useState('En')
+  
+  const {t, i18n} = useTranslation();
+  
   return (
     <div className="App">
-     {/*
-      <button onClick={()=>{lang=="En"?setLang("Fr"):setLang("En")}} >Change Languge</button>
-       <div className={['container',lang].join(' ')}>
- 
-         { lang=="En"?"HelloWorld":"Hello World in French"
-         }
-       </div>
-        */}
        <nav>
-        <img src={Logo} className='logo' />
+        <img src={Logo} className='logo' alt="logo"/>
         <div className="nav-options">
-          <a href="#" >about</a>
-          <a href="#" >products</a>
-          <a href="#" >contact us</a>
+          <a href="#" >{t("about")}</a>
+          <a href="#" >{t("product")}</a>
+          <a href="#" >{t("contactUs")}</a>
         </div>
        </nav>
+       <LanguageSwitcher/>
        
        <section  id="about">
        </section>
@@ -35,7 +34,6 @@ const [lang,setLang]=useState('En')
          <Product />
          <Product />
          <Product />  
-
        </section>
 
        <section  id="contact us">
@@ -43,11 +41,10 @@ const [lang,setLang]=useState('En')
        </section>
        
        <footer>
-       <h1 className='text-dark'>Footer 1</h1>
+       <h1 className='text-dark'>{t("footer")} 1</h1>
          <Footer />
        
-       
-         <h1 className='text-dark'>Footer 2</h1>
+         <h1 className='text-dark'>{t("footer")} 2</h1>
          <Footer2 />
        
         </footer>

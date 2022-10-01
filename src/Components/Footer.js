@@ -1,7 +1,14 @@
 import {Container, Row, Col} from 'reactstrap'
 import Logo from '../graphics/logo.png'
 import './Footer.css'
+
+import "../i18n/index";
+import { useTranslation }  from 'react-i18next'
+
 const Footer = () => {
+  
+  const {t, i18n} = useTranslation();
+
     return (
       <div>
       <div className='Container '>
@@ -15,16 +22,16 @@ const Footer = () => {
             </Col>
 
             <Col className='mb-3 p-3 text-muted'>
-              <h5>Services</h5>
+              <h5>{t("services")}</h5>
               <ul className='nav flex-column'>
-              <li><a className='nav-link p-0 text-muted p-1' href="#">Writing</a></li>
-              <li><a className='nav-link p-0 text-muted p-1' href="#">Internships</a></li>
-              <li><a className='nav-link p-0 text-muted p-1' href="#">Coding</a></li>
-              <li><a className='nav-link p-0 text-muted py-1' href="#">Teaching</a></li>
+              <li><a className='nav-link p-0 text-muted p-1' href="#">{t("writing")}</a></li>
+              <li><a className='nav-link p-0 text-muted p-1' href="#">{t("internships")}</a></li>
+              <li><a className='nav-link p-0 text-muted p-1' href="#">{t("coding")}</a></li>
+              <li><a className='nav-link p-0 text-muted py-1' href="#">{t("teaching")}</a></li>
               </ul>
             </Col>
             <Col className='mb-3 p-3 text-muted'>
-              <h5>Contact Us</h5>
+              <h5>{t("contactUs")}</h5>
               <ul className='nav flex-column'>
               <li><a className='nav-link text-muted p-1' href="#">Uttar Pradesh</a></li>
               <li><a className='nav-link text-muted p-1' href="#">Ahemdabad</a></li>
@@ -33,7 +40,7 @@ const Footer = () => {
               </ul>
             </Col>
             <Col className='mb-3 p-3 text-muted'>
-              <h5>Social Media</h5>
+              <h5>{t("socialMedia")}</h5>
               <ul className='nav flex-column'>
               <li><a className='nav-link text-muted p-2' href="#">
                 <span >Facebook</span>
@@ -53,7 +60,7 @@ const Footer = () => {
         </div>
         <div className="Block d-flex justify-content-center align-items-center">
 
-<div className='p-2 text-muted'><p>© 2022 Innovir Company, Inc. All rights reserved.</p></div>
+<div className='p-2 text-muted'><p>{t("copy")}</p></div>
 </div>
  
        

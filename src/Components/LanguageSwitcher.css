@@ -1,0 +1,36 @@
+.languageSwitcher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    margin-top: 3em;    
+}
+
+.languageSwitcher > button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.selectLanguage{
+    color: #000000;
+    font-size: 20px;
+}
+
+.imgLanguage{
+    width: 50px;
+}
+
+.buttonLanguage{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+}

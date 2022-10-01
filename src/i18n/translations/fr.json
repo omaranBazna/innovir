@@ -1,0 +1,21 @@
+{
+    "translation": {
+        "selectLanguage": "choisissez votre langue",
+        "title": "Titre",
+        "description": "La description",
+        "about": "Sur",
+        "product": "Des produits",
+        "contactUs": "Nous contacter",
+        "submit": "nous faire parvenir",
+        "name": "Entrez votre nom",
+        "email": "Entrer votre Email",
+        "footer": "bas de page",
+        "services": "Prestations de service",
+        "socialMedia": "Des médias sociaux",
+        "writing": "L'écriture",
+        "internships": "des stages",
+        "coding": "Codage",
+        "teaching": "Enseignement",
+        "copy": "© 2022 Innovir Compagnie, Inc. Tous les droits sont réservés."
+    }
+}
