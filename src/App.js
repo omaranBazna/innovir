@@ -32,15 +32,15 @@ function App() {
        </section>
 
        <section  id="products" >
-         <ProductOne />
-         <ProductTwo />
          <ProductThree />
          <ProductFour />  
+         <ProductThree />
+         <ProductFour /> 
 
        </section>
 
        <section  id="contact us">
-       <h1 className='text-dark'><center>Formulario de Contato</center></h1>
+       <h1 className='text-dark'><center>{t("form")}</center></h1>
          <ContactForm />
        </section>
        
