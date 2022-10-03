@@ -1,18 +1,20 @@
 import './App.css';
 
-import Product from "./Components/Product";
-import ContactForm from './Components/ContactForm';
-import Logo from './graphics/logo.png';
-import Footer from './Components/Footer';
-import Footer2 from './Components/Footer2'; 
-
 import "./i18n/index";
 import { LanguageSwitcher } from './Components/LanguageSwitcher';
 import { useTranslation }  from 'react-i18next'
 
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
+import {ProductFour, ProductThree, ProductTwo } from "./Components/Product"
+import ContactForm from './Components/ContactForm';
+import Logo from './graphics/logo.png'
+import Footer from './Components/Footer'
+import Footer2 from './Components/Footer2'
+import ProductOne from './Components/Product';
 function App() { 
   
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   
   return (
     <div className="App">
@@ -30,13 +32,15 @@ function App() {
        </section>
 
        <section  id="products" >
-         <Product />
-         <Product />
-         <Product />
-         <Product />  
+         <ProductOne />
+         <ProductTwo />
+         <ProductThree />
+         <ProductFour />  
+
        </section>
 
        <section  id="contact us">
+       <h1 className='text-dark'><center>Formulario de Contato</center></h1>
          <ContactForm />
        </section>
        
