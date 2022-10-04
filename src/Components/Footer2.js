@@ -1,14 +1,28 @@
 import {Container, Row, Col} from 'reactstrap'
 import { BsLinkedin, BsFacebook, BsTwitter } from "react-icons/bs";
+import Logo from '../graphics/logo.png'
 import './Footer.css'
+
+import "../i18n/index";
+import { useTranslation }  from 'react-i18next'
+
 const Footer2 = () => {
+
+    const {t, i18n} = useTranslation();
+
     return (
         <div>
         <div className='Container'>
             <Row className='d-flex justify-content-evenly  py-3 my-4 border text-muted'>
+                <Col className='mb-3 p-3'>
+                <ul className="container-image">  
+                    <img className="image" src={Logo}/>
+                    <p className='text-muted'>@ 2022</p>        
+                </ul>
+                </Col>
                 <Col className='text-muted text-center'>
                     <span><img src='./logo.png' />
-                    <p>© 2022 Innovir Company, Inc. All rights reserved.</p>
+                    <p>{t("copy")}</p>
                     </span>
                     </Col>
                 <Col className='text-center'>

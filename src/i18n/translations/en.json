@@ -1,0 +1,25 @@
+{
+    "translation": {
+        "selectLanguage": "Select your language",
+        "title": "Title",
+        "description": "Description",
+        "about": "About",
+        "product": "Products",
+        "contactUs": "Contact Us",
+        "submit": "Submit",
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "footer": "Footer",
+        "services": "services",
+        "socialMedia": "Social Media",
+        "writing": "Writing",
+        "internships": "Internships",
+        "coding": "Coding",
+        "teaching": "Teaching",
+        "copy": "© 2022 Innovir Company, Inc. All rights reserved.",
+        "phone": "Enter your phone",
+        "comments": "Comments",
+        "send": "Send",
+        "form": "Contact Form"
+    }
+}
