@@ -1,0 +1,11 @@
+.About{
+    background-color: rgba(3, 0, 0, 0.1);
+}
+
+
+.Cover-container {
+    max-width: 50%;
+    display: block;
+    /* border: solid rgba(35, 32, 32, 0.15);
+    border-width: 1px 0; */
+}

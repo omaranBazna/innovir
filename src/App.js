@@ -1,57 +1,71 @@
+import logo from './logo.svg';
 import './App.css';
-
-import "./i18n/index";
-import { LanguageSwitcher } from './Components/LanguageSwitcher';
-import { useTranslation }  from 'react-i18next'
-
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
-import {ProductFour, ProductThree, ProductTwo } from "./Components/Product"
-import ContactForm from './Components/ContactForm';
+import {useState} from 'react'
+import Product from "./pages/Product";
+import About from "./pages/About";
+// import Index from "./pages/Index"
+import ContactForm from './pages/ContactForm';
 import Logo from './graphics/logo.png'
 import Footer from './Components/Footer'
 import Footer2 from './Components/Footer2'
-import ProductOne from './Components/Product';
+
+
 function App() { 
-  
-  const {t} = useTranslation();
-  
+const [lang,setLang]=useState('pt-br')
+
   return (
     <div className="App">
+     {/*
+      <button onClick={()=>{lang=="En"?setLang("Fr"):setLang("En")}} >Change Languge</button>
+       <div className={['container',lang].join(' ')}>
+ 
+         { lang=="En"?"HelloWorld":"Hello World in French"
+         }
+       </div>
+        */}
        <nav>
-        <img src={Logo} className='logo' alt="logo"/>
+       
+        <img src={Logo} className='logo' />
         <div className="nav-options">
-          <a href="#" >{t("about")}</a>
-          <a href="#" >{t("product")}</a>
-          <a href="#" >{t("contactUs")}</a>
+          <a href="#" ></a>
+          <a href="/About" className="menu-btn">About</a>
+          <a href="/product.js" className="menu-btn" >products</a>
+          <a href="/ContactForm.js" >Contato</a>
+          <a href="/Index.js" className="menu-btn">indexus</a>
         </div>
        </nav>
-       <LanguageSwitcher/>
-       
-       <section  id="about">
-       </section>
+        <div  className="About">
+          <About />
+        </div>
 
-       <section  id="products" >
-         <ProductThree />
-         <ProductFour />  
-         <ProductThree />
-         <ProductFour /> 
+       <div  className="products" >
+         <Product /> 
+         {/* <Index /> */}
+         <Product />
+         <Product />
+         <Product />
 
-       </section>
+       </div>
 
-       <section  id="contact us">
-       <h1 className='text-dark'><center>{t("form")}</center></h1>
+       {/* <section id="IndexUs">
+        <Index/>
+       </section> */}
+
+
+
+       <div className="contact us">
          <ContactForm />
-       </section>
-       
+       </div>
+  
        <footer>
-       <h1 className='text-dark'>{t("footer")} 1</h1>
-         <Footer />
+        <h1 className='text-dark'>Footer 1</h1>
+          <Footer />
+        
+        
+          {/* <h1 className='text-dark'>Footer 2</h1>
+          <Footer2 /> */}
        
-         <h1 className='text-dark'>{t("footer")} 2</h1>
-         <Footer2 />
-       
-        </footer>
+       </footer>
 
     </div>
   );

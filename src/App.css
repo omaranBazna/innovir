@@ -1,24 +1,27 @@
-@font-face {
-  font-family: 'MyFont';
-  src: local('MyFont'),
-   url(./fonts/Sony_Sketch_EF.woff) format('woff');
- 
+#products{
+  display:flex;
 }
-
+.product{
+  padding:10px;
+  margin: 70px;
+  background-color: rgb(255, 0, 0);
+  border-radius:8px;
+}
 nav{
   display:flex;
   align-items:center;
   justify-content: flex-start;
-  height:50px;
+  height: 50px;
   background-color:black;
-  width: 100vw;
+  
 }
 .nav-options{
-  width:100vw;
-  display: flex; 
+  width:100%;
+  display: flex;
   align-items:center;
   justify-content: space-around;
 }
+
 nav img{
   height:50px;
   padding:20px;
@@ -37,18 +40,41 @@ a:hover{
  font-family: 'MyFont';
   
 }
-
-#products{
-  display:flex;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 3em;
+@media(max-width:650px) {
+  
 }
 
-@media(max-width:900px) {
-  #products{
-    flex-direction: column;
-  }
+.contact-form{
+  margin: 30px;
+  padding: 50px;
+  display: flex;
+  border: 1px solid #000;
+  background: rgba(3, 0, 0, 0.1);
+  max-width: 50%;
+  /* display: block; */
+
+  
+}
+
+
+
+.form-label{
+  padding-top: 10px;
+  color: #000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.checkbox{
+  color: rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'),
+   url(./fonts/Sony_Sketch_EF.woff) format('woff');
+ 
+}
+
+.ReCaptach{
+  padding-left: 30px;
 }
